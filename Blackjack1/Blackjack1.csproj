@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20B5296F-2276-4D63-AB26-54EA15922BFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Blackjack1</RootNamespace>
+    <AssemblyName>Blackjack1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Blackjack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blackjack.Designer.cs">
+      <DependentUpon>Blackjack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Blackjack.resx">
+      <DependentUpon>Blackjack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="10C.png" />
+    <Content Include="10D.png" />
+    <Content Include="10H.png" />
+    <Content Include="10S.png" />
+    <Content Include="11C.png" />
+    <Content Include="11D.png" />
+    <Content Include="11H.png" />
+    <Content Include="11S.png" />
+    <Content Include="12C.png" />
+    <Content Include="12D.png" />
+    <Content Include="12H.png" />
+    <Content Include="12S.png" />
+    <Content Include="13C.png" />
+    <Content Include="13D.png" />
+    <Content Include="13H.png" />
+    <Content Include="13S.png" />
+    <Content Include="1C.png" />
+    <Content Include="1D.png" />
+    <Content Include="1H.png" />
+    <Content Include="1S.png" />
+    <Content Include="2C.png" />
+    <Content Include="2D.png" />
+    <Content Include="2H.png" />
+    <Content Include="2S.png" />
+    <Content Include="3C.png" />
+    <Content Include="3D.png" />
+    <Content Include="3H.png" />
+    <Content Include="3S.png" />
+    <Content Include="4C.png" />
+    <Content Include="4D.png" />
+    <Content Include="4H.png" />
+    <Content Include="4S.png" />
+    <Content Include="5C.png" />
+    <Content Include="5D.png" />
+    <Content Include="5H.png" />
+    <Content Include="5S.png" />
+    <Content Include="6C.png" />
+    <Content Include="6D.png" />
+    <Content Include="6H.png" />
+    <Content Include="6S.png" />
+    <Content Include="7C.png" />
+    <Content Include="7D.png" />
+    <Content Include="7H.png" />
+    <Content Include="7S.png" />
+    <Content Include="8C.png" />
+    <Content Include="8D.png" />
+    <Content Include="8H.png" />
+    <Content Include="8S.png" />
+    <Content Include="9C.png" />
+    <Content Include="9D.png" />
+    <Content Include="9H.png" />
+    <Content Include="9S.png" />
+    <Content Include="deck.png" />
+    <Content Include="Images\10C.png" />
+    <Content Include="Images\10D.png" />
+    <Content Include="Images\10H.png" />
+    <Content Include="Images\10S.png" />
+    <Content Include="Images\11C.png" />
+    <Content Include="Images\11D.png" />
+    <Content Include="Images\11H.png" />
+    <Content Include="Images\11S.png" />
+    <Content Include="Images\12C.png" />
+    <Content Include="Images\12D.png" />
+    <Content Include="Images\12H.png" />
+    <Content Include="Images\12S.png" />
+    <Content Include="Images\13C.png" />
+    <Content Include="Images\13D.png" />
+    <Content Include="Images\13H.png" />
+    <Content Include="Images\13S.png" />
+    <Content Include="Images\1C.png" />
+    <Content Include="Images\1D.png" />
+    <Content Include="Images\1H.png" />
+    <Content Include="Images\1S.png" />
+    <Content Include="Images\2C.png" />
+    <Content Include="Images\2D.png" />
+    <Content Include="Images\2H.png" />
+    <Content Include="Images\2S.png" />
+    <Content Include="Images\3C.png" />
+    <Content Include="Images\3D.png" />
+    <Content Include="Images\3H.png" />
+    <Content Include="Images\3S.png" />
+    <Content Include="Images\4C.png" />
+    <Content Include="Images\4D.png" />
+    <Content Include="Images\4H.png" />
+    <Content Include="Images\4S.png" />
+    <Content Include="Images\5C.png" />
+    <Content Include="Images\5D.png" />
+    <Content Include="Images\5H.png" />
+    <Content Include="Images\5S.png" />
+    <Content Include="Images\6C.png" />
+    <Content Include="Images\6D.png" />
+    <Content Include="Images\6H.png" />
+    <Content Include="Images\6S.png" />
+    <Content Include="Images\7C.png" />
+    <Content Include="Images\7D.png" />
+    <Content Include="Images\7H.png" />
+    <Content Include="Images\7S.png" />
+    <Content Include="Images\8C.png" />
+    <Content Include="Images\8D.png" />
+    <Content Include="Images\8H.png" />
+    <Content Include="Images\8S.png" />
+    <Content Include="Images\9C.png" />
+    <Content Include="Images\9D.png" />
+    <Content Include="Images\9H.png" />
+    <Content Include="Images\9S.png" />
+    <Content Include="Images\deck.png" />
+    <None Include="Resources\poker-table-background-13.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
